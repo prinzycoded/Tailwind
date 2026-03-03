@@ -17,6 +17,30 @@
       <a href="#" class="hover:text-gray-900 dark:hover:text-white transition">Pricing</a>
       <a href="#" class="hover:text-gray-900 dark:hover:text-white transition">About</a>
     </div>
+    <div class="flex items-center gap-4">
+
+      <button onclick="toggleDark()" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition">
+        🌙
+      </button>
+
+      <a href="#" class="hidden md:inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition">
+        Get Started
+      </a>
+
+      <button class="md:hidden text-gray-600 dark:text-gray-300">
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+</nav>
+
+<script>
+  function toggleDark() {
+    document.documentElement.classList.toggle('dark');
+  }
+</script>
 
     
 </body>
